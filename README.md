@@ -12,7 +12,6 @@
     - [Pacman](#pacman)
   - [MacOS](#macos)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Documentation](#documentation)
   - [Methods](#methods)
 - [Authors](#authors)
@@ -49,15 +48,9 @@ brew install lua
 
 ## Installation
 
-Clone this repository:
-
 `git clone "https://github.com/DeBos99/lua-coogeo.git"`
 
-## Usage
-
-Move the file **coogeo.lua** to your project directory and include it:
-
-`require 'coogeo'`
+Move the file **coogeo.lua** to your project directory and add `require 'coogeo'` at the start of your source file.
 
 ## Documentation
 
