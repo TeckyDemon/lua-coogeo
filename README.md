@@ -15,6 +15,7 @@
 - [Documentation](#documentation)
   - [Methods](#methods)
 - [Authors](#authors)
+- [Contact](#contact)
 - [License](#license)
 
 ## Prerequisites
@@ -66,6 +67,10 @@ Move the file **coogeo.lua** to your project directory and add `require 'coogeo'
 ## Authors
 
 * **Michał Wróblewski** - Main Developer - [DeBos99](https://github.com/DeBos99)
+
+## Contact
+
+Discord: DeBos#3292
 
 ## License
 
