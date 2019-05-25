@@ -1,5 +1,7 @@
 # Lua-CooGeo
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Lua-CooGeo** is coordinate geometry library for Lua.
 
 ## Content
