@@ -33,6 +33,7 @@
 - [Installation](#installation)
 - [Documentation](#documentation)
   - [Methods](#methods)
+  - [Example](#example)
 - [Authors](#authors)
 - [Contact](#contact)
 - [License](#license)
@@ -82,6 +83,22 @@ Move the file **coogeo.lua** to your project directory and add `require 'coogeo'
 | math.midpoint(x1,y1,x2,y2) | Returns coordinates of the line joining two points. |
 | math.slope(x1,y1,x2,y2)    | Returns slope of line joining two points.           |
 | math.gradient(x1,y1,x2,y2) | Synonymous with **math.slope(x1,y1,x2,y2)**.        |
+
+### Example
+
+```lua
+require 'coogeo'
+
+x1 = 1
+y1 = 2
+x2 = 3
+y2 = 4
+
+print(math.distance(x1, y1, x2, y2))
+print(math.midpoint(x1, y1, x2, y2))
+print(math.slope(x1, y1, x2, y2))
+print(math.gradient(x1, y1, x2, y2))
+```
 
 ## Authors
 
