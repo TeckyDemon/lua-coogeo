@@ -24,13 +24,15 @@
 ## Content
 
 - [Content](#content)
-- [Prerequisites](#prerequisites)
-  - [Windows](#windows)
-  - [Linux](#linux)
-    - [APT](#apt)
-    - [Pacman](#pacman)
-  - [MacOS](#macos)
 - [Installation](#installation)
+  - [Windows](#windows)
+  - [Unix](#unix)
+    - [Debian/Ubuntu](#apt)
+    - [Arch Linux/Manjaro](#pacman)
+    - [CentOS](#yum)
+    - [MacOS](#homebrew)
+- [Installation](#installation)
+- [Usage](#usage)
 - [Documentation](#documentation)
   - [Methods](#methods)
   - [Example](#example)
@@ -38,47 +40,64 @@
 - [Contact](#contact)
 - [License](#license)
 
-## Prerequisites
+## Installation
 
 ### Windows
 
-Install Lua: https://sourceforge.net/projects/luabinaries/files/5.3.5/Tools%20Executables/lua-5.3.5_Win32_bin.zip/download
-
-### Linux
-
-#### APT
-
+* Install [Lua](https://sourceforge.net/projects/luabinaries/files/5.3.5/Tools%20Executables/lua-5.3.5_Win32_bin.zip/download).
+* Run following command in the command prompt:
 ```
-sudo apt update && sudo apt upgrade -y
-sudo apt install lua5.3 -y
+git clone "https://github.com/DeBos99/lua-coogeo.git"
 ```
 
-#### Pacman
+### Unix
 
-```
-sudo pacman -Syu --noconfirm
-sudo pacman -S lua --noconfirm
-```
+#### <a name="APT">Debian/Ubuntu based
 
-### MacOS
-
+* Run following commands in the terminal:
 ```
-brew update && brew upgrade
-brew install lua
+sudo apt install git lua -y
+git clone "https://github.com/DeBos99/lua-coogeo.git"
 ```
 
-## Installation
+#### <a name="Pacman">Arch Linux/Manjaro
 
-`git clone "https://github.com/DeBos99/lua-coogeo.git"`
+* Run following commands in the terminal:
+```
+sudo pacman -S git lua --noconfirm
+git clone "https://github.com/DeBos99/lua-coogeo.git"
+```
 
-Move the file **coogeo.lua** to your project directory and add `require 'coogeo'` at the start of your source file.
+#### <a name="YUM">CentOS
+
+* Run following commands in the terminal:
+```
+sudo yum install git lua -y
+git clone "https://github.com/DeBos99/lua-coogeo.git"
+```
+
+#### <a name="Homebrew">MacOS
+
+* Run following commands in the terminal:
+```
+brew install git lua
+git clone "https://github.com/DeBos99/lua-coogeo.git"
+```
+
+## Usage
+
+* Move the file [coogeo.lua](coogeo.lua) to your project directory.
+* Add following line at the top of your source file:
+```
+require 'coogeo'
+```
 
 ## Documentation
 
 ### Methods
 
 | Method                     | Description                                         |
-| :---                       | :---                                                |
+| :------------------------- | :-------------------------------------------------- |
 | math.distance(x1,y1,x2,y2) | Returns distance between two points.                |
 | math.midpoint(x1,y1,x2,y2) | Returns coordinates of the line joining two points. |
 | math.slope(x1,y1,x2,y2)    | Returns slope of line joining two points.           |
