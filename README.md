@@ -125,7 +125,8 @@ print(math.gradient(x1, y1, x2, y2))
 
 ## Contact
 
-Discord: DeBos#3292
+* Discord: DeBos#3292
+* Reddit: [DeBos99](https://www.reddit.com/user/DeBos99)
 
 ## License
 
